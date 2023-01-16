@@ -17,7 +17,7 @@ namespace AlgoritmPrograms
             while (flag)
             {
                 Console.WriteLine("------------------------------------------------");
-                Console.WriteLine("1.BinarySearch\n2.Insertion Sort\n3.Exit");
+                Console.WriteLine("1.BinarySearch\n2.Insertion Sort\n3.Bubble Sort\n4.Exit");
                 Console.Write("Select any one from the above option: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -33,6 +33,11 @@ namespace AlgoritmPrograms
                         sort.Sort(arr);
                         break;
                     case 3:
+                        BubbleSort bubbleSort = new BubbleSort();
+                        int[] arrr = { 6, 3, 4, 27, 8 };
+                        bubbleSort.Sort(arrr);
+                        break;
+                    case 4:
                         flag = false;
                         break;
                 }
