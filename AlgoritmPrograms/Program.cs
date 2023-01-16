@@ -17,7 +17,7 @@ namespace AlgoritmPrograms
             while (flag)
             {
                 Console.WriteLine("------------------------------------------------");
-                Console.WriteLine("1.BinarySearch\n2.Exit");
+                Console.WriteLine("1.BinarySearch\n2.Insertion Sort\n3.Exit");
                 Console.Write("Select any one from the above option: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -28,6 +28,11 @@ namespace AlgoritmPrograms
                         search.BinarySearchWord("bridgelabz");
                         break;
                     case 2:
+                        InsertionSort sort = new InsertionSort();
+                        int[] arr = { 20, 39, 2, 3, 6, 54, 3 };
+                        sort.Sort(arr);
+                        break;
+                    case 3:
                         flag = false;
                         break;
                 }
