@@ -17,7 +17,7 @@ namespace AlgoritmPrograms
             while (flag)
             {
                 Console.WriteLine("------------------------------------------------");
-                Console.WriteLine("1.BinarySearch\n2.Insertion Sort\n3.Bubble Sort\n4.Check for Anagram\n5.Exit");
+                Console.WriteLine("1.BinarySearch\n2.Insertion Sort\n3.Bubble Sort\n4.Check for Anagram\n5.Replace a string\n6.Exit");
                 Console.Write("Select any one from the above option: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -41,9 +41,12 @@ namespace AlgoritmPrograms
                         Anagram anagram = new Anagram();
                         anagram.CheckAnagram("heart", "earth");
                         break;
-
-
                     case 5:
+                        UserInput userInput=new UserInput();
+                        userInput.ReplaceString();
+                        break;
+
+                    case 6:
                         flag = false;
                         break;
                 }
