@@ -17,7 +17,7 @@ namespace AlgoritmPrograms
             while (flag)
             {
                 Console.WriteLine("------------------------------------------------");
-                Console.WriteLine("1.BinarySearch\n2.Insertion Sort\n3.Bubble Sort\n4.Check for Anagram\n5.Replace a string\n6.Exit");
+                Console.WriteLine("1.BinarySearch\n2.Insertion Sort\n3.Bubble Sort\n4.Check for Anagram\n5.Replace a string\n6.Prime Number 0 To 1000\n7.Exit");
                 Console.Write("Select any one from the above option: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -45,8 +45,12 @@ namespace AlgoritmPrograms
                         UserInput userInput=new UserInput();
                         userInput.ReplaceString();
                         break;
-
                     case 6:
+                        primeNumber0To1000 primeNumber0To1000 = new primeNumber0To1000();
+                        primeNumber0To1000.prime();
+                        break;
+
+                    case 7:
                         flag = false;
                         break;
                 }
