@@ -47,9 +47,11 @@ namespace AlgoritmPrograms
                         break;
                     case 6:
                         primeNumber0To1000 primeNumber0To1000 = new primeNumber0To1000();
+                        Console.WriteLine("The prime numbers between 0 To 1000 Are");
                         primeNumber0To1000.prime();
+                        Console.WriteLine("\nThe Palindroms in given prime number are");
+                        primeNumber0To1000.PrimePalindrome();
                         break;
-
                     case 7:
                         flag = false;
                         break;

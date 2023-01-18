@@ -8,6 +8,8 @@ namespace AlgoritmPrograms
 {
     internal class primeNumber0To1000
     {
+        public List<int> primeNumbers = new List<int>();
+      //  public List<int> primePalindrome = new List<int>();
         public void prime()
         {
             int IsPrime = 0;
@@ -22,9 +24,31 @@ namespace AlgoritmPrograms
                     if (IsPrime == 2) break;
                 }
                 if(IsPrime!=2)
-                    Console.WriteLine(i);
+                    Console.Write(" "+i);
+                primeNumbers.Add(i);    
                 IsPrime = 0;
             }
         }
+        public void PrimePalindrome()
+        {
+            foreach(var data in primeNumbers)
+            {
+                if (data > 9)
+                {
+                    int sum = 0;
+                    int remainder;
+                    int temp = data;
+                    while (temp > 0)
+                    {
+                        remainder = temp % 10;
+                        sum = sum * 10 + remainder;
+                        temp /= 10;
+                    }
+                    if (sum == data)
+                        Console.Write(" "+data);
+                }
+            }
+        }
+
     }
 }
